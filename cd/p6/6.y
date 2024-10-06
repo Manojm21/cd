@@ -19,7 +19,7 @@ void generateCode();
 %token <sym> LETTER NUMBER
 %type <sym> expr
 %left '-' '+'
-%right '*' '/'
+%left '*' '/'
 
 %%
 statement: LETTER '=' expr ';' { AddToTable($1, $3, '='); }

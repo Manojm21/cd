@@ -47,6 +47,10 @@ int main()
 {
     printf("enter input: ");
     yyparse();
+
+//yyin = fopen("7_input.txt","r");
+	//if(yyparse() == 0) printf("Parsing successful!\n");
+
     printf("successfull\n");
     return 0;
 }
